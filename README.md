@@ -13,10 +13,27 @@ npm install github:zos-apps/music
 ## Usage
 
 ```tsx
-import ZMusic from '@zos-apps/music';
+import App from '@zos-apps/music';
 
-function App() {
-  return <ZMusic />;
+function MyApp() {
+  return <App />;
+}
+```
+
+## Package Spec
+
+App metadata is defined in `package.json` under the `zos` field:
+
+```json
+{
+  "zos": {
+    "id": "ai.hanzo.music",
+    "name": "Music",
+    "icon": "🎵",
+    "category": "entertainment",
+    "permissions": ["storage"],
+    "installable": true
+  }
 }
 ```
 
