@@ -2,6 +2,7 @@
   "name": "@zos-apps/music",
   "version": "4.2.0",
   "description": "Music player with playlist support",
+  "homepage": "https://zos-apps.github.io/music",
   "main": "src/index.tsx",
   "types": "src/index.tsx",
   "files": ["src"],
@@ -11,18 +12,35 @@
     "icon": "🎵",
     "category": "entertainment",
     "permissions": ["storage"],
-    "installable": true
+    "installable": true,
+    "shortcut": "Cmd+M",
+    "menu": {
+      "help": {
+        "documentation": "https://zos-apps.github.io/music",
+        "reportIssue": "https://github.com/zos-apps/music/issues"
+      }
+    },
+    "contextMenu": [
+      {"label": "Open", "action": "open"},
+      {"label": "Open in New Window", "action": "openNew"},
+      {"type": "separator"},
+      {"label": "Get Info", "action": "getInfo"},
+      {"label": "Show in Finder", "action": "showInFinder"}
+    ]
   },
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "lucide-react": ">=0.300.0"
   },
-  "keywords": ["zos", "app", "music"],
+  "keywords": ["zos", "app", "music", "macos", "desktop"],
   "author": "Hanzo AI",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zos-apps/music.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/music/issues"
   }
 }
