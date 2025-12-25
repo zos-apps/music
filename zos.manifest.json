@@ -1,0 +1,14 @@
+{
+  "id": "ai.hanzo.music",
+  "name": "Music",
+  "version": "4.2.0",
+  "description": "Music player with playlist support",
+  "icon": "🎵",
+  "category": "entertainment",
+  "author": "Hanzo AI",
+  "repository": "https://github.com/zos-apps/music",
+  "minSdkVersion": "4.0.0",
+  "permissions": ["storage"],
+  "main": "src/index.tsx",
+  "installable": true
+}
