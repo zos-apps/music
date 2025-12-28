@@ -1,54 +1,83 @@
-# 🎵 Music
+# Music
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/zos-apps/music/releases)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Docs](https://img.shields.io/badge/docs-online-purple.svg)](https://zos-apps.github.io/music)
+🎵 Music player with library management and streaming support.
 
-> Music player
+[![CI](https://github.com/zos-apps/music/actions/workflows/ci.yml/badge.svg)](https://github.com/zos-apps/music/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/@zos-apps/music.svg)](https://www.npmjs.com/package/@zos-apps/music)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**[Documentation](https://zos-apps.github.io/music)** • **[App Store](https://zos-apps.github.io/app-store)** • **[All Apps](https://github.com/zos-apps)**
+## About
 
-## Installation
-
-```bash
-npm install github:zos-apps/music
-```
-
-Or install via the [zOS App Store](https://zos-apps.github.io/app-store).
-
-## Usage
-
-```tsx
-import Music from '@zos-apps/music';
-
-function App() {
-  return <Music />;
-}
-```
+Music player with library management and streaming support.
 
 ## Features
 
-- Native zOS window integration
-- Dark mode support
+- Library management
+- Playlists
+- Queue
+- Equalizer
+- Lyrics
 
-- Context menu actions
-- Menu bar integration
+## Installation
 
-## Category
+### From App Store
+Open the **App Store** in zOS and search for "Music".
 
-**Media**
+### Via npm
+```bash
+npm install @zos-apps/music
+```
 
-## Permissions
+## Usage
 
-- `storage.local`
+- Add music to library
+- Create playlists
+- Control playback at bottom
 
-## Links
+## Keyboard Shortcuts
 
-- [Documentation](https://zos-apps.github.io/music)
-- [GitHub Repository](https://github.com/zos-apps/music)
-- [Report Issues](https://github.com/zos-apps/music/issues)
-- [All zOS Apps](https://github.com/zos-apps)
+| Shortcut | Action |
+|----------|--------|
+| `Space` | Play/Pause |
+| `←` | Previous |
+| `→` | Next |
+| `↑↓` | Volume |
+
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Documentation
+
+- [User Guide](https://zos-apps.github.io/music)
+- [API Reference](https://zos-apps.github.io/music/api)
+- [Changelog](https://github.com/zos-apps/music/releases)
+
+## Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](https://github.com/zos-apps/music/blob/main/CONTRIBUTING.md) first.
 
 ## License
 
 MIT © [Hanzo AI](https://hanzo.ai)
+
+---
+
+<p align="center">
+  <a href="https://hanzo.ai">
+    <img src="https://hanzo.ai/logo.svg" alt="Hanzo AI" width="100">
+  </a>
+</p>
+<p align="center">
+  Built with ❤️ by <a href="https://hanzo.ai">Hanzo AI</a>
+</p>

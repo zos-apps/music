@@ -19,7 +19,28 @@
         "height": 600
       },
       "resizable": true
-    }
+    },
+    "about": "Music player with library management and streaming support.",
+    "help": [
+      "Add music to library",
+      "Create playlists",
+      "Control playback at bottom"
+    ],
+    "docs": "https://zos-apps.github.io/music",
+    "site": "https://github.com/zos-apps/music",
+    "shortcuts": [
+      "Space Play/Pause",
+      "← Previous",
+      "→ Next",
+      "↑↓ Volume"
+    ],
+    "features": [
+      "Library management",
+      "Playlists",
+      "Queue",
+      "Equalizer",
+      "Lyrics"
+    ]
   },
   "scripts": {
     "build": "tsup",
@@ -52,5 +73,13 @@
     "music",
     "macos",
     "desktop"
-  ]
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/zos-apps"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
