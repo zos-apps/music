@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 interface MusicProps { onClose: () => void; }
 
@@ -11,7 +11,7 @@ const SONGS = [
   { title: 'Save Your Tears', artist: 'The Weeknd', album: 'After Hours', duration: '3:35' },
 ];
 
-const Music: React.FC<MusicProps> = ({ onClose }) => {
+const Music: React.FC<MusicProps> = ({ onClose: _onClose }) => {
   const [playing, setPlaying] = useState<number | null>(null);
   const [view, setView] = useState('library');
 
